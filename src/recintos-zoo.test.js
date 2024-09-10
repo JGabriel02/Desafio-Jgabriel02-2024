@@ -46,7 +46,7 @@ test('Deve rejeitar leão em recinto com outra espécie', () => {
 });
 
 
-// Teste adicional: Verificar se hipopótamo não é colocado em recinto apenas de savana
+
 test('Não deve encontrar recinto para 1 hipopótamo em bioma savana apenas', () => {
     const resultado = new RecintosZoo().analisaRecintos('HIPOPOTAMO', 1);
     expect(resultado.recintosViaveis).not.toContain('Recinto 1');
